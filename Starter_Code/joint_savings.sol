@@ -73,7 +73,7 @@ contract JointSavings {
         /*
         Call the `contractBalance` variable and set it equal to the balance of the contract by using `address(this).balance`.
         */
-        contractBalance = address.(this).balance;
+        contractBalance = address(this).balance;
     }
 
     /*
@@ -90,5 +90,5 @@ contract JointSavings {
     /*
     Finally, add the **default fallback function** so that your contract can store Ether sent from outside the deposit function.
     */
-    fucntion() external payable {}
+    function() external payable {}
 }
